@@ -1,6 +1,6 @@
 FROM maven:latest as maven
 WORKDIR /build
-COPY . .
+COPY ./bankEclipse .
 RUN mvn clean package
 FROM java:8
 WORKDIR /opt/back-end
