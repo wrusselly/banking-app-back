@@ -30,7 +30,7 @@ public class AccountsController {
 	}
 	
 	@RequestMapping(value = "accounts/{id}", method = RequestMethod.GET)
-    public Accounts get(@PathVariable Long id){
+    public Long get(@PathVariable Long id){
         return accountsService.getAccount(id).getMoney();
     }
 	
